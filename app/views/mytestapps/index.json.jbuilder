@@ -1,0 +1,1 @@
+json.array! @mytestapps, partial: 'mytestapps/mytestapp', as: :mytestapp
