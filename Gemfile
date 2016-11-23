@@ -9,8 +9,16 @@ gem 'pg', '~> 0.15'
 
 # from Stackoverflow
 gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
-gem 'aws-sdk', '>= 2.0'
+gem 'aws-sdk', '< 2.0'
 gem 'rmagick'
+gem 'activemerchant', '~> 1.61'
+#spree
+# rails g spree:install --user_class=Spree::User
+# rails g spree:auth:install
+# rails g spree_gateway:install
+gem 'spree', '~> 3.1.0'
+gem 'spree_auth_devise', '~> 3.1.0'
+gem 'spree_gateway', '~> 3.1.0'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
