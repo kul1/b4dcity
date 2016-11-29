@@ -35,5 +35,8 @@ module B4dcity
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+        # Postmark config
+    config.action_mailer.delivery_method = :postmark
+    config.action_mailer.postmark_settings = { :api_token => "2c4dd3e6-b64a-4175-9d8c-35d1cb70a501" }
   end
 end
