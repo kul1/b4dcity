@@ -6,6 +6,8 @@ ruby '2.3.1'
 gem 'rails', '4.2.6'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.15'
+# Read ENV from config/application.yml
+gem 'figaro'
 
 # from Stackoverflow
 gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
@@ -23,6 +25,8 @@ gem 'spree_gateway', '~> 3.1.0'
 # Add Mail
 gem 'postmark'
 gem 'postmark-rails'
+# Add Social
+gem 'spree_social', :git=> 'https://github.com/spree-contrib/spree_social', branch: '3-1-stable'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
