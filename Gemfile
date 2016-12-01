@@ -2,11 +2,14 @@ source 'https://rubygems.org'
 
 ruby '2.3.1'
 
+
+gem 'rack-timeout' 
+gem 'thor', '0.19.1'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.15'
-
 # from Stackoverflow
 gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
 gem 'aws-sdk', '< 2.0'
@@ -67,4 +70,9 @@ group :development do
 end
 
 #Heroku required
-gem 'rails_12factor', group: :production
+group :production do 
+  gem 'rails_12factor'
+  gem 'puma'
+  gem 'puma_worker_killer'
+end
+
