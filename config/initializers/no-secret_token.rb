@@ -6,4 +6,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-B4dcity::Application.config.secret_token = '3eb6db5a9026c547c72708438d496d942e976b252138db7e4e0ee5edd7539457d3ed0fa02ee5e7179420ce5290462018591adaf5f42adcf855da04877827def2'
+B4dcity::Application.config.secret_token = '051bc29cf263cca17edc2efcb721e3a623d0f725216c5662eb7d5da30105754036500c5bdae5f46ad186d64da794ec7b99324a1c073793c4fa906dd1d81251d6'
