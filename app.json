@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "postdeploy": [
-      "bundle exec rake spree:install --user_class=Spree::User"
+      "bundle exec rake spree:install"
     ]
   },
 
