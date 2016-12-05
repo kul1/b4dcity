@@ -12,13 +12,22 @@
     "heroku-postgresql",
     "mailgun"
   ],
+  "scripts": {
+    "postdeploy": [
+      "bundle exec rake spree:install --user_class=Spree::User",
+      "bundle exec rake railties:install:migrations",
+      "bundle exec rake db:migrate",
+      "bundle exec rake db:seed",
+      "bundle exec rake spree_sample:load"
+    ]
+  },
 
   "env": {
     "SECRET_TOKEN": {
       "description": "A secret key for verifying the integrity of signed cookies.",
       "generator": "secret"
     },
-      "S3_BUCKET_NAME": {
+    "S3_BUCKET_NAME": {
       "description": "Name of your S3 bucket on AWS, if using S3 file storage.",
       "required": true
     },
