@@ -8,7 +8,7 @@
   ],
   "website": "https://github.com/kul1/b4dcity",
   "repository": "https://github.com/kul1/b4dcity",
-  "logo": "https://cloud.githubusercontent.com/assets/296432/3865771/e9dde8ba-1fa8-11e4-9ce6-193fc429175c.png",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
   "env": {
     "SECRET_TOKEN": {
       "description": "A secret key for verifying the integrity of signed cookies.",
