@@ -1,12 +1,8 @@
 == README
 Deploy Heroku
 
-[![Deploy to Heroku](https://deploy-button.herokuapp.com/deploy.png)](https://deploy-button.herokuapp.com/deploy/southpolesteve/deploy_button)
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-[![Deploy to Heroku](http://node-js-sample.herokuapp.com/node.svg)](https://heroku.com/deploy)
-
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 AWS for Heroku then get 
 
