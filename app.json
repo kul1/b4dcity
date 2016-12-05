@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "postdeploy": [
-      "bundle exec rake spree:install"
+      "bundle exec rake railties:install:migrations"
     ]
   },
 
