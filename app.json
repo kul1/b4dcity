@@ -14,11 +14,7 @@
   ],
   "scripts": {
     "postdeploy": [
-      "bundle exec rake spree:install --user_class=Spree::User",
-      "bundle exec rake railties:install:migrations",
-      "bundle exec rake db:migrate",
-      "bundle exec rake db:seed",
-      "bundle exec rake spree_sample:load"
+      "bundle exec rake spree:install --user_class=Spree::User"
     ]
   },
 
