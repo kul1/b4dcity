@@ -10,12 +10,22 @@
   "logo": "http://node-js-sample.herokuapp.com/node.svg",
   "addons": [
     "heroku-postgresql",
-    "mailgun"
+    "postmark"
   ],
   "scripts": {
     "postdeploy": [
       "bundle exec rake railties:install:migrations"
-    ]
+    ],
+    "postdeploy": [
+      "bundle exec rake db:migrate"
+    ],
+    "postdeploy": [
+      "bundle exec rake db:seed"
+    ],
+    "postdeploy": [
+      "bundle exec rake spree_sample:load"
+    ],
+
   },
 
   "env": {
