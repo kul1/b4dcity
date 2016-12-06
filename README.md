@@ -1,12 +1,14 @@
 == README
 Deploy Heroku
 
-<a href="https://heroku.com/deploy"><img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy"></a>
+<a href="https://heroku.com/deploy">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
 
-[![Deploy to Heroku](https://deploy-button.herokuapp.com/deploy.png)](https://heroku.com/deploy/kul1/b4dcity)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 
- [![Deploy to Heroku](https://deploy-button.herokuapp.com/deploy.png)](https://heroku.com/deploy/kul1/b4dcity)
+[![Deploy to Heroku](https://deploy-button.herokuapp.com/deploy.png)](https://heroku.com/deploy)
 
 AWS for Heroku then get 
 
