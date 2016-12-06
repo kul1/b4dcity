@@ -25,7 +25,7 @@
       "description": "A secret key for verifying the integrity of signed cookies.",
       "generator": "secret"
     },
-    "S3_BUCKET_NAME": {
+    "S3_BUCKET_NAME":"b4dcity-development" {
       "description": "Name of your S3 bucket on AWS, if using S3 file storage.",
       "required": true
     },
