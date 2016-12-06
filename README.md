@@ -10,6 +10,11 @@
 heroku git:clone -a <your-app-name>
 cd <your-app-name>
 heroku run rake spree_auth:admin:create
+heroku run db:seed
+```
+If need sample
+
+```
 heroku run rake spree_sample:load
 ```
 
