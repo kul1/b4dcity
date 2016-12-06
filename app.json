@@ -12,13 +12,13 @@
     "heroku-postgresql",
     "postmark"
   ],
-  "scripts": [
-    "postdeploy": {
+  "scripts": {
+    "postdeploy": [
       "bundle exec rake db:migrate",
       "bundle exec rake db:seed",
       "bundle exec my_sample:load"
-    }
-  ],
+    ]
+  },
 
   "env": {
     "SECRET_TOKEN": {
