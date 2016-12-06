@@ -23,9 +23,22 @@
       "description": "A secret key for verifying the integrity of signed cookies.",
       "generator": "secret"
     },
-  "S3_BUCKET_NAME": "b4dcity-development", 
-  "AWS_ACCESS_KEY_ID": "AKIAISPR3Z4PQNE44TJQ", 
-  "AWS_SECRET_ACCESS_KEY": "ByfNVq7h9Qcdg6L5ej2dHebbto0Wt9bGkpf1efym", 
-  "AWS_REGION": "us-west-2"
+    "S3_BUCKET_NAME": {
+      "description": "Name of your S3 bucket on AWS, if using S3 file storage.",
+      "generator": "b4dcity-development"
+    },
+    "AWS_ACCESS_KEY_ID": {
+      "description": "Set your AWS Access Key ID to enable S3 file storage.",
+      "required": true
+    },
+    "AWS_SECRET_ACCESS_KEY": {
+      "description": "AWS Access Secret Key, if using S3 file storage.",
+      "required": true
+    },
+
+    "AWS_REGION": {
+      "description": "Region of your S3 bucket on AWS, if using S3 file storage.",
+      "required": true
+    }
   }
 }
