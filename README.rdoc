@@ -1,9 +1,7 @@
 == README
 Deploy Heroku
 
-<a href="https://heroku.com/deploy">
-  <img src="https://node-js-sample.herokuapp.com/node.png" alt="Deploy">
-</a>
+<a href="https://heroku.com/deploy"><img src="https://node-js-sample.herokuapp.com/node.png" alt="Deploy"></a>
 
 
 [![Deploy](https://node-js-sample.herokuapp.com/node.png)](https://heroku.com/deploy)
