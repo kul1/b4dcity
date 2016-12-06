@@ -26,9 +26,10 @@
     "S3_BUCKET_NAME": {
       "description": "Name of your S3 bucket on AWS, if using S3 file storage.",
       "required": true
+      "S3_BUCKET_NAME": "b4dcity-development"
     },
     "AWS_ACCESS_KEY_ID": {
-      "description": "Set your AWS Access Key ID to enable S3 file storage. Leave blank to disable file uploads.",
+      "description": "Set your AWS Access Key ID to enable S3 file storage.",
       "required": true
     },
     "AWS_SECRET_ACCESS_KEY": {
