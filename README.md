@@ -1,16 +1,21 @@
 == README
-Deploy Heroku
 
-<a href="https://heroku.com/deploy">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
-</a>
+## How to deploy Spree on Heroku
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+1.  Click this button, and follow the instructions :point_right: [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+2. Make sure you have the [Heroku Toolbelt](https://toolbelt.heroku.com) installed.
+3. After you have an instance running on Heroku, run these commands in your terminal.
+
+```
+heroku git:clone -a <your-app-name>
+cd <your-app-name>
+heroku run rake spree_auth:admin:create
+heroku run rake spree_sample:load
+```
+
+You can now log into your Spree installation using the initial user account (username: `spree@example.com`,  password: `spree123`).
 
 
-[![Deploy to Heroku](https://deploy-button.herokuapp.com/deploy.png)](https://heroku.com/deploy)
-
-AWS for Heroku then get 
 
 At Local Cli run or put in .profile 
 
@@ -19,26 +24,6 @@ At Local Cli run or put in .profile
  export AWS_SECRET_ACCESS_KEY=ByfNVq7h9Qcdg6L5ej2dHebbto0Wt9bGkpf1efym 
  export AWS_REGION=us-west-2
 
-
-At terminal run config for heroku:
-
-heroku config:set S3_BUCKET_NAME=b4dcity-production AWS_ACCESS_KEY_ID=AKIAISPR3Z4PQNE44TJQ AWS_SECRET_ACCESS_KEY=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 AWS_REGION=us-west-2
-
-1. Create database for local eg: b4_development and put name in 
-config/database.yml
-	development:
-  	<<: *default
-  	database: b4_development
-
-2. Create database for Heroku
-
-  600  heroku addons:create heroku-postgresql
-
-  604  heroku rake db:migration
-  605  heroku run rake railties:install:migrations
-  606  heroku run rake db:migrate
-  609  heroku run rake db:seed
-  611  heroku run rake spree_sample:load
 
 
 3. logs
