@@ -25,9 +25,63 @@ You can now log into your Spree installation using the initial user account (use
 At Local Cli run or put in .profile 
 
 ```
-    export S3_BUCKET_NAME=b4dcity-development 
-    export AWS_ACCESS_KEY_ID=AKIAISPR3Z4PQNE44TJQ 
-    export AWS_SECRET_ACCESS_KEY=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 
-    export AWS_REGION=us-west-2
+export S3_BUCKET_NAME=b4dcity-development 
+export AWS_ACCESS_KEY_ID=AKIAISPR3Z4PQNE44TJQ 
+export AWS_SECRET_ACCESS_KEY=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 
+export AWS_REGION=us-west-2
 ```
+To Change Logo
+
+##Modify Spree
+
+#Change logo
+1. Add logo.png in app/assets/images/logo.png 
+2. Add logo.png in app/assets/images/admin/logo.png 
+3. Insert in config/initializers/spree.rb
+    1. config.logo = "logo.png"
+    2. config.admin_interface_logo = "logo.png"
+```
+Spree.config do |config|
+  # Example:
+  # Uncomment to stop tracking inventory levels in the application
+  # config.track_inventory_levels = false
+  config.logo = "logo.png"
+  config.admin_interface_logo = "logo.png"
+
+end
+```
+
+Change CSS  or Style
+    1. Open Chrome go to pages to modify
+    2. Click inspect Element and copy need stype format 
+    3. Add to custom.css in vendor/asset/stylesheets/frontend/custom.css
+    4. Sample custom.css
+    5. Change name to custom.scss
+```
+.header_phone{
+	position: absolute;
+	top: 0;
+	right: 8px;
+	font-weight: bold;
+	font-size: 14px;
+	padding-bottom: 10px;
+	color: white;
+}
+.panel-default {
+    border-color: #45b92d;
+}
+```
+
+Modify Page Content (View)
+Create files in overrides e.g.: update_headers
+```
+       Deface::Override.new(virtual_path: 'spree/shared/_nav_bar',     
+              name: 'remove-search-bar',      
+              remove: '#search-bar')  
+```
+
+#Modify css
+~/mystore/vendor/assets/stylesheets/spree/frontend/custom.css
+#Change file ext to scss
+
 
