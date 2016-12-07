@@ -31,7 +31,6 @@ export AWS_ACCESS_KEY_ID=AKIAISPR3Z4PQNE44TJQ
 export AWS_SECRET_ACCESS_KEY=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 
 export AWS_REGION=us-west-2
 ```
-To Change Logo
 
 ##Modify Spree
 
@@ -59,7 +58,7 @@ end
 
     1. Open Chrome go to pages to modify
     2. Click inspect Element and copy need style format 
-    3. Add to custom.css in vendor/asset/stylesheets/frontend/custom.scss
+    3. Add to custom.scss in vendor/asset/stylesheets/frontend/custom.scss
 
 ```
 .header_phone{
