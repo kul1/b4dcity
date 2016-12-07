@@ -1,4 +1,4 @@
-== README
+== README.md
 
 ## How to deploy Spree on Heroku
 
@@ -53,7 +53,7 @@ Spree.config do |config|
 end
 ```
 ##Modify custom.scss
-~/mystore/vendor/assets/stylesheets/spree/frontend/custom.scss
+~/app/vendor/assets/stylesheets/spree/frontend/custom.scss
 
     1. Open Chrome go to pages to modify
     2. Click inspect Element and copy need style format 
