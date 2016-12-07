@@ -12,7 +12,7 @@ cd <your-app-name>
 heroku run rake spree_auth:admin:create
 heroku run db:seed
 ```
-If need sample
+##To add sample
 
 ```
 heroku run rake spree_sample:load
