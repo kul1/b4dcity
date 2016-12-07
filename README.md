@@ -34,12 +34,15 @@ To Change Logo
 
 ##Modify Spree
 
-#Change logo
+##Change logo
 1. Add logo.png in app/assets/images/logo.png 
 2. Add logo.png in app/assets/images/admin/logo.png 
-3. Insert in config/initializers/spree.rb
+##Insert in config/initializers/spree.rb
+```
     1. config.logo = "logo.png"
     2. config.admin_interface_logo = "logo.png"
+```
+
 ```
 Spree.config do |config|
   # Example:
@@ -47,16 +50,16 @@ Spree.config do |config|
   # config.track_inventory_levels = false
   config.logo = "logo.png"
   config.admin_interface_logo = "logo.png"
-
 end
 ```
+##Modify css
+~/mystore/vendor/assets/stylesheets/spree/frontend/custom.scss
+##Change file ext to scss
 
-Change CSS  or Style
     1. Open Chrome go to pages to modify
-    2. Click inspect Element and copy need stype format 
-    3. Add to custom.css in vendor/asset/stylesheets/frontend/custom.css
-    4. Sample custom.css
-    5. Change name to custom.scss
+    2. Click inspect Element and copy need style format 
+    3. Add to custom.css in vendor/asset/stylesheets/frontend/custom.scss
+
 ```
 .header_phone{
 	position: absolute;
@@ -72,7 +75,7 @@ Change CSS  or Style
 }
 ```
 
-Modify Page Content (View)
+##Modify Page Content (View)
 Create files in overrides e.g.: update_headers
 ```
        Deface::Override.new(virtual_path: 'spree/shared/_nav_bar',     
@@ -80,8 +83,6 @@ Create files in overrides e.g.: update_headers
               remove: '#search-bar')  
 ```
 
-#Modify css
-~/mystore/vendor/assets/stylesheets/spree/frontend/custom.css
-#Change file ext to scss
+
 
 
