@@ -39,8 +39,8 @@ export AWS_REGION=us-west-2
 2. Add logo.png in app/assets/images/admin/logo.png 
 ##Insert in config/initializers/spree.rb
 ```
-    1. config.logo = "logo.png"
-    2. config.admin_interface_logo = "logo.png"
+    config.logo = "logo.png"
+    config.admin_interface_logo = "logo.png"
 ```
 
 ```
@@ -52,9 +52,8 @@ Spree.config do |config|
   config.admin_interface_logo = "logo.png"
 end
 ```
-##Modify css
+##Modify custom.scss
 ~/mystore/vendor/assets/stylesheets/spree/frontend/custom.scss
-##Change file ext to scss
 
     1. Open Chrome go to pages to modify
     2. Click inspect Element and copy need style format 
