@@ -6,6 +6,7 @@
 2. Make sure you have the [Heroku Toolbelt](https://toolbelt.heroku.com) installed.
 3. After you have an instance running on Heroku, run these commands in your terminal.
 
+## To Update from local
 ```
 heroku git:clone -a <your-app-name>
 cd <your-app-name>
