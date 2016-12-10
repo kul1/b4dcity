@@ -14,8 +14,10 @@ heroku git:clone --app YOURAPPNAME && cd YOURAPPNAME
 git remote add github https://github.com/kul1/b4dcity
 git pull origin master 
 git push heroku master
-``
+```
+
 ## To Update from local
+
 ```
 heroku git:clone -a <your-app-name>
 cd <your-app-name>
