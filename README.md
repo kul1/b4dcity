@@ -6,6 +6,15 @@
 2. Make sure you have the [Heroku Toolbelt](https://toolbelt.heroku.com) installed.
 3. After you have an instance running on Heroku, run these commands in your terminal.
 
+##Updating
+
+After deploying your own Spree, you can update it by running the following commands:
+```
+heroku git:clone --app YOURAPPNAME && cd YOURAPPNAME
+git remote add github https://github.com/kul1/b4dcity
+git pull origin master 
+git push heroku master
+``
 ## To Update from local
 ```
 heroku git:clone -a <your-app-name>
@@ -21,6 +30,10 @@ heroku run rake spree_sample:load
 
 You can now log into your Spree installation using the initial user account (username: `spree@example.com`,  password: `spree123`).
 
+
+`
+
+This will pull down the code that was deployed to Heroku so you have it locally, attach this repository as a new remote, attempt to pull down the latest version and merge it in, and then push that change back to your Heroku app instance.
 
 
 At Local Cli run or put in .profile 
