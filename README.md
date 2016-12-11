@@ -63,7 +63,7 @@ Tip: make sure local database and other environment config properly
 
 Here Linked you may need:
 
-   [https://github.com/spree/spree](spree/spree)
+   [https://github.com/spree/spree](https://github.com/spree/spree)
 
    [Heroku Toolbelt](https://toolbelt.heroku.com)
 
