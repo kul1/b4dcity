@@ -22,12 +22,16 @@ git push heroku master
 heroku git:clone -a <your-app-name>
 cd <your-app-name>
 heroku run rake spree_auth:admin:create
-heroku run db:seed
+heroku run rake db:seed
 ```
 ##To add sample
 
 ```
 heroku run rake spree_sample:load
+```
+## To re-create admin user
+```
+heroku run rake spree_auth:admin:create
 ```
 
 You can now log into your Spree installation using the initial user account (username: `spree@example.com`,  password: `spree123`).
