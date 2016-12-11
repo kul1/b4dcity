@@ -15,7 +15,6 @@
 ```
 heroku git:clone -a <your-app-name>
 cd <your-app-name>
-heroku run rake spree_auth:admin:create
 heroku run rake db:seed
 ```
 ##To add sample
@@ -37,7 +36,7 @@ After deploying your own Spree, you can update it by running the following comma
 ```
 heroku git:clone --app YOURAPPNAME && cd YOURAPPNAME #if you not clone yet
 git remote add github https://github.com/kul1/b4dcity
-git pull origin master 
+git pull github master 
 git push heroku master
 ```
 
@@ -72,7 +71,7 @@ Here Linked you may need:
 ##Change logo
 1. Add logo.png in app/assets/images/logo.png 
 2. Add logo.png in app/assets/images/admin/logo.png
- 
+
 ##Insert in config/initializers/spree.rb
 ```
     config.logo = "logo.png"
