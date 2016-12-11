@@ -58,13 +58,13 @@ Then you may begin follow Spree Installation
 
 Here Linked you may need:
 
-[https://github.com/spree/spree](spree/spree)
+   [https://github.com/spree/spree](spree/spree)
 
-[Heroku Toolbelt](https://toolbelt.heroku.com)
+   [Heroku Toolbelt](https://toolbelt.heroku.com)
 
-[Your Access Key ID and Secret Access Key](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html)
+   [Your Access Key ID and Secret Access Key](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html)
 
--[a Bucket](http://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html)
+   [Bucket](http://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html)
 
 ##Modify Spree
 
