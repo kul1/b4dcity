@@ -47,7 +47,7 @@ This will pull down the code that was deployed to Heroku so you have it locally,
 ##Tip:
 To run sample at local with image store in aws, you will need to have all S3 in path.
 
-At Local Cli run or put S3 in .profile 
+At Local Cli run or put S3 in .profile or your .env as attached.
 
 
 ```
