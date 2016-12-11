@@ -23,9 +23,9 @@
       "description": "A secret key for verifying the integrity of signed cookies.",
       "generator": "secret"
     },
-  "S3_BUCKET_NAME": "spree-sample", 
-  "AWS_ACCESS_KEY_ID": "AKIAISPR3Z4PQNE44TJQ", 
-  "AWS_SECRET_ACCESS_KEY": " jOSmKgkAG3JGeZRQ4Udc+JZGCoAoFStLekV235BF", 
+  "S3_BUCKET_NAME": "spreesample", 
+  "AWS_ACCESS_KEY_ID": "AKIAINQY2COMIQXWQ3JQ", 
+  "AWS_SECRET_ACCESS_KEY": "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", 
   "AWS_REGION": "us-west-2"
   }
 }
