@@ -30,7 +30,7 @@ heroku run rake spree_auth:admin:create
 You can now log into your Spree installation using the initial user account (username: `spree@example.com`,  password: `spree123`).
 
 
-##To create local (Beyond this purpose)
+##To create local
 
 After deploying your own Spree, you can update it by running the following commands:
 ```
@@ -46,6 +46,7 @@ This will pull down the code that was deployed to Heroku so you have it locally,
 
 ##Tip:
 To run sample at local with image store in aws, you will need to have all S3 in path.
+
 At Local Cli run or put S3 in .profile 
 
 
@@ -57,6 +58,7 @@ export AWS_REGION=<YOUR_AWS_REGION>
 ```
 
 Then you may begin follow Spree Installation
+
 Tip: make sure local database and other environment config properly  
 
 Here Linked you may need:
