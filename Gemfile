@@ -18,14 +18,14 @@ group :development do
 end
 gem 'aws-sdk', '< 2.0'
 
-# Add Social
-gem 'spree_social', :git=> 'https://github.com/spree-contrib/spree_social', branch: '3-1-stable'
 
 gem 'rmagick'
 gem 'activemerchant', '~> 1.61'
 #spree
 gem 'spree', '~> 3.1.0'
 gem 'spree_auth_devise', '~> 3.1.0'
+# Add Social
+gem 'spree_social', :git=> 'https://github.com/spree-contrib/spree_social', branch: '3-1-stable'
 gem 'spree_gateway', '~> 3.1.0'
 
 # Add Mail
