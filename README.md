@@ -5,9 +5,10 @@
 
 1. Make sure you have the [Heroku Toolbelt](https://toolbelt.heroku.com) installed.
 
-2. Go get [![Your Access Key ID and Secret Access Key]](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html) for your production and [![a Bucket]](http://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) or keep enter using sample default.
+2. Go get [Your Access Key ID and Secret Access Key](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html) for your production and [a Bucket](http://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) or Enter using default sample key.
 
 3. Click this button, and follow the instructions :point_right: [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 
 4. After you have an instance running on Heroku, run these commands in your terminal.
 
