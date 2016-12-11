@@ -1,14 +1,13 @@
 == README.md
 
-## How to deploy Spree on Heroku
+## Deploy Spree using Heroku Button
 (You may first try use my default sample bucket, aws Access Key and Secret Access Key in Menu or follow detail link to learn more.)
 
 1. Make sure you have the [Heroku Toolbelt](https://toolbelt.heroku.com) installed.
 
-2. Go get [Your Access Key ID and Secret Access Key](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html) for your production and [a Bucket](http://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) or Enter using default sample key.
+2. Click this button, and follow the instructions :point_right: [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-3. Click this button, and follow the instructions :point_right: [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
+3. Go get [Your Access Key ID and Secret Access Key](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html) for your production and [a Bucket](http://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) or Enter using default sample key.
 
 4. After you have an instance running on Heroku, run these commands in your terminal.
 
@@ -55,7 +54,7 @@ export AWS_SECRET_ACCESS_KEY=jOSmKgkAG3JGeZRQ4Udc+JZGCoAoFStLekV235BF
 export AWS_REGION=us-west-2
 ```
 
-At this point please follow Spree instruction just like normal 
+Then you may begin follow Spree Installation  
 
 [https://github.com/spree/spree](spree/spree)
 
