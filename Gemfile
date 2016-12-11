@@ -12,7 +12,7 @@ gem 'rails', '4.2.6'
 gem 'pg', '~> 0.15'
 # from Stackoverflow
 gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
-gem 'dotenv-rails', :require => 'dotenv/rails-now'
+gem 'dotenv-rails', :require => 'dotenv/rails-now' :groups => [:development, :test]
 gem 'aws-sdk', '< 2.0'
 # Add Social
 gem 'spree_social', :git=> 'https://github.com/spree-contrib/spree_social', branch: '3-1-stable'
