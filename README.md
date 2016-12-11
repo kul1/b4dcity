@@ -41,9 +41,9 @@ This will pull down the code that was deployed to Heroku so you have it locally,
 At Local Cli run or put in .profile 
 
 ```
-export S3_BUCKET_NAME=b4dcity-development 
-export AWS_ACCESS_KEY_ID=AKIAISPR3Z4PQNE44TJQ 
-export AWS_SECRET_ACCESS_KEY=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 
+export S3_BUCKET_NAME=spreesample-development 
+export AWS_ACCESS_KEY_ID=AKIAINQY2COMIQXWQ3JQ 
+export AWS_SECRET_ACCESS_KEY=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 
 export AWS_REGION=us-west-2
 ```
 
