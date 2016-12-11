@@ -1,20 +1,13 @@
 == README.md
 
 ## How to deploy Spree on Heroku
+(You may first try use my default sample bucket, aws Access Key and Secret Access Key in Menu or follow detail link to learn more.)
+1. Make sure you have the [Heroku Toolbelt](https://toolbelt.heroku.com) installed.
+2. Go get [![Your Access Key ID and Secret Access Key]](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html) for your production and [![a Bucket]](http://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) or keep enter using sample default.
+3. Click this button, and follow the instructions :point_right: [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+4. After you have an instance running on Heroku, run these commands in your terminal.
 
-1.  Click this button, and follow the instructions :point_right: [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-2. Make sure you have the [Heroku Toolbelt](https://toolbelt.heroku.com) installed.
-3. After you have an instance running on Heroku, run these commands in your terminal.
 
-##Updating
-
-After deploying your own Spree, you can update it by running the following commands:
-```
-heroku git:clone --app YOURAPPNAME && cd YOURAPPNAME
-git remote add github https://github.com/kul1/b4dcity
-git pull origin master 
-git push heroku master
-```
 
 ## To Update from local
 
@@ -37,12 +30,21 @@ heroku run rake spree_auth:admin:create
 You can now log into your Spree installation using the initial user account (username: `spree@example.com`,  password: `spree123`).
 
 
-`
+##To create local
+
+After deploying your own Spree, you can update it by running the following commands:
+```
+heroku git:clone --app YOURAPPNAME && cd YOURAPPNAME #if you not clone yet
+git remote add github https://github.com/kul1/b4dcity
+git pull origin master 
+git push heroku master
+```
 
 This will pull down the code that was deployed to Heroku so you have it locally, attach this repository as a new remote, attempt to pull down the latest version and merge it in, and then push that change back to your Heroku app instance.
 
 
-At Local Cli run or put in .profile 
+At Local Cli run or put S3 in .profile 
+
 
 ```
 export S3_BUCKET_NAME=spreesample-development 
