@@ -12,7 +12,11 @@ gem 'rails', '4.2.6'
 gem 'pg', '~> 0.15'
 # from Stackoverflow
 gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
+gem 'dotenv-rails', :require => 'dotenv/rails-now'
 gem 'aws-sdk', '< 2.0'
+# Add Social
+gem 'spree_social', :git=> 'https://github.com/spree-contrib/spree_social', branch: '3-1-stable'
+
 gem 'rmagick'
 gem 'activemerchant', '~> 1.61'
 #spree
@@ -23,8 +27,6 @@ gem 'spree_gateway', '~> 3.1.0'
 # Add Mail
 gem 'postmark'
 gem 'postmark-rails'
-# Add Social
-gem 'spree_social', :git=> 'https://github.com/spree-contrib/spree_social', branch: '3-1-stable'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
