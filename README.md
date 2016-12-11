@@ -71,7 +71,8 @@ Here Linked you may need:
 
 ##Change logo
 1. Add logo.png in app/assets/images/logo.png 
-2. Add logo.png in app/assets/images/admin/logo.png 
+2. Add logo.png in app/assets/images/admin/logo.png
+ 
 ##Insert in config/initializers/spree.rb
 ```
     config.logo = "logo.png"
