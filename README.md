@@ -13,9 +13,6 @@
 4. After you have an instance running on Heroku, run these commands in your terminal.
 
 
-
-## To Update from local
-
 ```
 heroku git:clone -a <your-app-name>
 cd <your-app-name>
@@ -58,7 +55,12 @@ export AWS_SECRET_ACCESS_KEY=jOSmKgkAG3JGeZRQ4Udc+JZGCoAoFStLekV235BF
 export AWS_REGION=us-west-2
 ```
 
+At this point please follow Spree instruction just like normal 
+-[https://github.com/spree/spree](spree/spree)
+-[Heroku Toolbelt](https://toolbelt.heroku.com)
+-[Your Access Key ID and Secret Access Key](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html)
 ##Modify Spree
+-[a Bucket](http://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html)
 
 ##Change logo
 1. Add logo.png in app/assets/images/logo.png 
