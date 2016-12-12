@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "postdeploy": [
-      "bundle exec rake b4set"
+      "bundle exec rake db:migrate"
     ]
   },
 
