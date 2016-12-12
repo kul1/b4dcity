@@ -4,3 +4,11 @@
 require File.expand_path('../config/application', __FILE__)
 
 Rails.application.load_tasks
+
+task :b4set do
+ 	puts "db:reset"
+ 		Rake::Task["db:reset"].invoke
+ 	puts "spree_sample:load"
+ 		Rake::Task["spree_sample:load"].invoke
+ end
+ 
