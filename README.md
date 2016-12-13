@@ -15,7 +15,6 @@
 ```
 heroku git:clone -a <your-app-name>
 cd <your-app-name>
-heroku run rake db:seed
 ```
 ##To add sample
 
@@ -93,6 +92,23 @@ Spree.config do |config|
   config.admin_interface_logo = "logo.png"
 end
 ```
+##To replace code using Deface
+Put new code in  app/overrides directory
+ 
+```
+Deface::Override.new(:virtual_path => 'spree/admin/products/_form',
+  :name => 'add_sale_price_to_product_edit',
+  :insert_after => "erb[loud]:contains('text_field :price')",
+  :text => "
+    <%= f.field_container :sale_price do %>
+      <%= f.label :sale_price, raw(Spree.t(:sale_price) + content_tag(:span, ' *')) %>
+      <%= f.text_field :sale_price, :value =>
+        number_to_currency(@product.sale_price, :unit => '') %>
+      <%= f.error_message_on :sale_price %>
+    <% end %>
+  ")
+```       
+
 ##Modify custom.scss
 ~/app/vendor/assets/stylesheets/spree/frontend/custom.scss
 
