@@ -5,7 +5,8 @@ require File.expand_path('../config/application', __FILE__)
 
 Rails.application.load_tasks
 
-task :b4set do
+task :b4set do 
+	AUTO_ACCEPT=1
  	puts "db:reset"
  		Rake::Task["db:reset"].invoke
  	puts "spree_sample:load"
