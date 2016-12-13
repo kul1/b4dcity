@@ -11,4 +11,5 @@ task :b4set do
  	# puts "db:seed"
  	    ENV['AUTO_ACCEPT'] = '1'
  	 	Rake::Task["db:seed"].invoke
+ 	 	Rake::Task["spree_sample:load"].invoke
  	end
