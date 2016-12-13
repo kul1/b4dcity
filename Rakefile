@@ -6,8 +6,9 @@ require File.expand_path('../config/application', __FILE__)
 Rails.application.load_tasks
 
 task :b4set do 
- 	puts "db:migrate"
- 		Rake::Task["db:migrate"].invoke(ENV['AUTO_ACCEPT'] == true)
- 	puts "db:seed"
- 		Rake::Task["db:seed"].invoke(ENV['AUTO_ACCEPT'] == true)
- end
+ 	puts "db:reset"
+ 	puts "ENV['AUTO_ACCEPT']: #{ENV['AUTO_ACCEPT']}"
+ 		Rake::Task["db:reset"].invoke
+ 	# puts "db:seed"
+ 	# 	Rake::Task["db:seed"].invoke
+ 	end
