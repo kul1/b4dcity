@@ -16,8 +16,9 @@ gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523b
 group :development do
  	gem 'dotenv-rails', :require => 'dotenv/rails-now' 
 end
-gem 'aws-sdk', '< 2.0'
 
+gem 'aws-sdk', '< 2.0'
+gem 'protected_attributes'
 
 gem 'rmagick'
 gem 'activemerchant', '~> 1.61'
