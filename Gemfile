@@ -18,7 +18,6 @@ group :development do
 end
 
 gem 'aws-sdk', '< 2.0'
-gem 'protected_attributes'
 
 gem 'rmagick'
 gem 'activemerchant', '~> 1.61'
