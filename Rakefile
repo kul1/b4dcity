@@ -8,6 +8,6 @@ Rails.application.load_tasks
 task :b4set do 
  	puts "db:migrate"
  		Rake::Task["db:migrate"].invoke(ENV['AUTO_ACCEPT'] == true)
- 	#puts "spree_sample:load"
- 		# Rake::Task["spree_sample:load"].invoke
+ 	puts "db:seed"
+ 		Rake::Task["db:seed"].invoke(ENV['AUTO_ACCEPT'] == true)
  end
