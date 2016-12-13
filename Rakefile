@@ -11,4 +11,3 @@ task :b4set do
  	puts "spree_sample:load"
  		Rake::Task["spree_sample:load"].invoke
  end
- 
