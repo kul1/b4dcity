@@ -1,4 +1,5 @@
 == README.md
+This is only another short way to go get start Spree on Heroku. 
 
 ## Deploy Spree using Heroku Button
 (You may first try use my default sample bucket, aws Access Key and Secret Access Key in Menu or follow detail link to learn more.)
@@ -92,21 +93,18 @@ Spree.config do |config|
   config.admin_interface_logo = "logo.png"
 end
 ```
-##To replace code using Deface
+##Replace code using [Deface](https://github.com/spree/deface)
 Put new code in  app/overrides directory
- 
+ eg: To override code in[ spree/frontend/app/views/spree/shared/_nav_bar.html.erb](https://github.com/spree/spree/blob/master/frontend/app/views/spree/shared/_nav_bar.html.erb) 
+ notes: [virtual_path](https://github.com/spree/deface)
 ```
-Deface::Override.new(:virtual_path => 'spree/admin/products/_form',
-  :name => 'add_sale_price_to_product_edit',
-  :insert_after => "erb[loud]:contains('text_field :price')",
-  :text => "
-    <%= f.field_container :sale_price do %>
-      <%= f.label :sale_price, raw(Spree.t(:sale_price) + content_tag(:span, ' *')) %>
-      <%= f.text_field :sale_price, :value =>
-        number_to_currency(@product.sale_price, :unit => '') %>
-      <%= f.error_message_on :sale_price %>
-    <% end %>
-  ")
+Deface::Override.new(virtual_path: 'spree/shared/_nav_bar',     
+        name: 'remove-search-bar',      
+        remove: '#search-bar')      
+
+Deface::Override.new(virtual_path: 'spree/shared/_main_nav_bar',
+        name: 'remove-main-nav',        
+        remove: '#main-nav-bar')
 ```       
 
 ##Modify custom.scss
@@ -117,27 +115,19 @@ Deface::Override.new(:virtual_path => 'spree/admin/products/_form',
     3. Add to custom.scss in vendor/asset/stylesheets/frontend/custom.scss
 
 ```
-.header_phone{
-	position: absolute;
-	top: 0;
-	right: 8px;
-	font-weight: bold;
-	font-size: 14px;
-	padding-bottom: 10px;
-	color: white;
+// Change logo size
+#spree-header #logo img {
+    width: 20%;
 }
-.panel-default {
-    border-color: #45b92d;
+
+// Change Banner here
+#spree-header{
+  background:  asset-url('Splash-2.jpeg');
+  background-size: cover;
 }
+
 ```
 
-##Modify Page Content (View)
-Create files in overrides e.g.: update_headers
-```
-       Deface::Override.new(virtual_path: 'spree/shared/_nav_bar',     
-              name: 'remove-search-bar',      
-              remove: '#search-bar')  
-```
 
 
 

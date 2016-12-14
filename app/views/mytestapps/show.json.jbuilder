@@ -1,1 +1,0 @@
-json.partial! "mytestapps/mytestapp", mytestapp: @mytestapp
